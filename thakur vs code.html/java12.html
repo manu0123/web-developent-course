@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script set timeout and clear timeout</title>
+</head>
+<body>
+    <div class="container">
+       this is a <span id="time"></span>
+    </div>
+    <script>
+        console.log(" This is java12.html");
+        // setTimeout -->  Alows us to run the function once after the interval of time
+        // clearTimeout -->  Alows us to run the function repeatedly after the interval of time
+    // function greet(name ,byetext){
+    //     console.log("hello brother"+ name +" ",+ byetext);
+    // }
+    //  timeout = setTimeout(greet, 5000," mandeep ",  "take care");
+    //  console.log(timeout);
+    //  clearTimeout(timeout);
+//    intervalid = setInterval(greet, 1000,"mandeep","good night");
+//    clearInterval(intervalid);
+
+function displayTime(){
+    time = new Date();
+    console.log(time);
+document.getElementById('time').innerHTML = time;
+}
+setInterval(displayTime, 1000);
+
+
+
+
+  
+  
+
+      
+
+    </script>
+</body>
+</html>

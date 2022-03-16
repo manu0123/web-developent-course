@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listing events</title>
+</head>
+<body>
+
+    <style>
+        .btn{
+           
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    margin: 13px 12px;
+    padding: 19px 20px;
+    font-weight: bold;
+    font-size: 23px;
+    border-radius: 21px;
+    cursor: pointer;
+        }
+    </style>
+    <div class="conatainer">
+        <h1>This is heading </h1>
+        <p id = "para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quis beatae minima vero voluptas dolorum qui provident hic voluptatem maxime perspiciatis dolore sint illo quo saepe ab voluptatum, nemo totam dolores omnis nesciunt accusamus non! Quam quibusdam deserunt dolore quo a facere impedit rerum ex incidunt earum. Tempore ea repudiandae tenetur atque veritatis esse, modi natus eveniet explicabo veniam rem dolore animi. Nemo minus esse aspernatur facere rem soluta minima, deserunt quas fugiat, neque iste laborum accusamus eaque omnis. Itaque dolor voluptatibus, nesciunt laudantium aperiam pariatur similique aliquam adipisci ea ratione alias porro rem facere voluptatum sunt odit soluta, repellendus, illo molestias repudiandae. Natus nam fugit sed, quia dicta libero facere esse pariatur neque illum, impedit nulla aut exercitationem, omnis eligendi odio dolores. Incidunt, suscipit rerum accusantium assumenda esse accusamus, eum hic repudiandae placeat cumque sed non, beatae ab sit odit minima. Molestiae totam quibusdam repellendus laborum ducimus mollitia, nihil perspiciatis fuga! Consectetur iste voluptas assumenda voluptatibus explicabo aut aliquam nostrum veritatis, expedita sunt deserunt, animi culpa consequuntur. Quo exercitationem, maiores ea vel fugit commodi nam vitae culpa voluptatem explicabo dolorum porro, iste debitis sapiente nulla fugiat iusto alias quidem incidunt ullam odit deserunt beatae? Provident veritatis veniam nemo minus dolore corporis sit exercitationem fugit, voluptatem molestiae quam ea, amet iusto eaque cum repellendus cupiditate repudiandae qui nihil corrupti, explicabo distinctio optio. Autem odit porro voluptatibus unde inventore maiores repellat voluptates. Id saepe ducimus culpa sint optio nisi deserunt itaque assumenda sunt rem odit sed cumque velit dolor quis labore impedit autem quae quisquam, quidem, doloremque expedita corporis voluptatibus! Culpa maiores nobis adipisci vitae, iure, at consectetur laudantium pariatur obcaecati provident, in quasi molestias. Optio, illum tenetur. Ut atque vero numquam molestiae magnam cupiditate maiores ducimus excepturi nobis repellendus? Cumque consequuntur exercitationem quaerat qui minima. Blanditiis eius earum nam, dolorum similique pariatur reprehenderit consequuntur, magnam doloremque fugiat a qui labore distinctio unde, iusto corporis quibusdam omnis minima quae et! Provident consequatur, quasi doloribus quod repellat neque a assumenda? Beatae, quos aperiam! Velit a facilis illum consectetur maxime quasi doloremque incidunt asperiores. Saepe laudantium sit, soluta nostrum ea a molestias excepturi, fugiat, tempora odio placeat optio impedit. Magnam ullam molestiae, laudantium ducimus, sequi quod maxime libero quam dicta suscipit nostrum ipsa deleniti architecto at esse fugit maiores sed. Deleniti sunt esse hic? Corporis, minus qui? Quaerat quae quisquam suscipit. Illo eum ex deleniti quod quas fugit consequatur iusto nesciunt vero blanditiis? Fugit dolorum impedit vel nemo assumenda. Temporibus dolores perferendis possimus, illum incidunt molestias harum esse soluta error architecto atque excepturi quasi odit. Consectetur explicabo exercitationem optio impedit accusantium odit vel ipsa facere tempora in temporibus eveniet minus ratione commodi officiis sint, vero harum nemo dicta expedita id nisi! Autem quibusdam provident eos magnam? Incidunt harum voluptatem dolorem, ex libero at numquam facilis officiis quae ducimus voluptatibus voluptas aliquam quia doloremque eveniet quis fuga rerum aut iure corrupti cum ipsa accusantium. Sed ipsa iure nihil vitae deserunt assumenda ipsam veritatis, nulla nemo magni accusantium neque temporibus facilis harum. Perferendis quas, ipsa assumenda accusamus incidunt nulla rerum aperiam molestiae dignissimos expedita ea accusantium dolorum aspernatur obcaecati, ullam ipsum debitis consectetur hic. Quae vitae ipsa cum. Doloribus, nisi rem doloremque repudiandae iure quo illo molestias fugiat debitis quia, qui iusto alias quisquam, vitae minima perspiciatis voluptatibus? Saepe error iure fugit repudiandae sit similique ad corrupti ullam, eum tempore, sunt deserunt dolorem illum accusantium delectus quod facilis voluptas.</p>
+        <button  onclick = "hideshow()"class="btn">
+            Hide/Show
+        </button>
+        <script>
+            let para = document.getElementById('para');
+            para.addEventListener("mouseover" ,function run(){
+                console.log("mouse is inside");
+            })
+            para.addEventListener("mouseout" ,function run(){
+                console.log(" Now mouse went outside");
+            })
+
+
+            function hideshow(){
+                if(para.style.display !="none"){
+                    para.style.display = "none";
+                }
+                else{
+                    para.style.display ="block";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

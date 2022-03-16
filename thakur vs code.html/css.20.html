@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseduo selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: rgb(5, 5, 5);
+            font-family: 'PT Sans', sans-serif;
+            background: url() no-repeat center center/cover;
+
+
+        }
+        header::before{
+            content: '';
+            background: url(https://images.unsplash.com/photo-1448935852404-7a38bb46f5b3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHwxOTA3Mjd8fHx8fHx8MTYyNzEwMjAyMQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.8;
+            
+
+        }
+
+        section {
+            align-items: center9
+            justify-content: center;
+            height: 344px;
+            display: flex;
+            flex-direction: column;
+            margin: 3px 146px;
+            padding: 3px 26px
+        }
+
+        h1 {
+            font-size: 3rem;
+
+        }
+
+        /* p{
+           text-align: center;
+       } */
+        /* section::before{
+           content:"i am a content";
+       } */
+        .navigation {
+            display: flex;
+            font-size: 25px;
+            font-family: 'PT Sans', sans-serif;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 13px 18px;
+            margin: 3px 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Email us</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome To Mandeep Thakur Coding</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi, tempore nesciunt earum repellat
+            illo? Dolores eligendi adipisci alias illum, dicta ipsa, animi natus deleniti mollitia quos dignissimos
+            earum saepe voluptatem libero? Aut optio nisi beatae voluptatibus porro nemo ipsam. Obcaecati, a!
+            Obcaecati, maxime alias delectus veritatis, provident atque autem eius laboriosam placeat quas
+            cupiditate magnam.</p>
+    </section>
+    <hr>
+</body>
+
+</html>

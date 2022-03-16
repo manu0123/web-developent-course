@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 8px 23px;
+            border: 2px solid black;
+            color:rgb(255, 255, 255);
+            background-color: black;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        #btn:hover{
+            color: black;
+            background-color: white;
+
+        }
+        #btn:active{
+            color: red;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <h1>This is my heading</h1>
+       <p id = "para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati fuga deleniti odio veritatis sequi labore eligendi ut quaerat, explicabo reiciendis accusantium enim. Inventore voluptas tempore hic sit ducimus, dicta culpa rerum deserunt veniam ipsam sint atque deleniti quidem fuga expedita officiis nobis id vero rem. Molestias amet nisi quas ea, minima ratione, doloremque, aliquam dolore veniam unde sapiente. Assumenda, illum consectetur repudiandae dolores libero, alias delectus corporis voluptas aspernatur magnam ab nam ut facilis, architecto itaque? Exercitationem doloribus quasi laboriosam reprehenderit veniam necessitatibus, tempore fugit eius et, cumque totam maiores iste sequi perspiciatis ad deserunt ea id! Doloribus magni facilis enim deserunt? Labore praesentium temporibus quas dolores quia recusandae, libero, animi, explicabo quisquam corporis in doloribus aut! Voluptates vero nobis placeat dolorem iste! Deserunt laboriosam dolorum commodi impedit, ut ipsa. Repellat consequatur beatae asperiores, laborum cum inventore, corporis nobis aut fugit, quo nostrum labore. Atque, aspernatur tenetur libero amet nobis consectetur rem, voluptatem vitae autem fugit asperiores neque ipsa, at consequuntur iusto ullam similique placeat. Molestiae, quam voluptas. Ipsam voluptate mollitia expedita totam quisquam, cumque qui ex porro delectus quam enim atque quibusdam repellat in quidem reiciendis pariatur unde, temporibus reprehenderit. Recusandae tempore suscipit, porro repellendus rerum atque vel voluptatibus! Tempora, repudiandae obcaecati eius labore consequatur veritatis quisquam sapiente, amet quo voluptatibus tempore rem vero odio quibusdam modi mollitia. Voluptatum iure at unde illo necessitatibus rerum? Facilis consequatur asperiores vero cupiditate. Officia, possimus aut.</p>
+   </div>
+   <button id="btn" onclick="toggleHide()">Show/Hide</button>
+   <script>
+            let para = document.getElementById('para'); 
+            para.addEventListener('mouseover', function run(){
+                console.log('inside mouse');
+            })
+      
+            para.addEventListener('mouseout', function run(){
+                console.log('mouse now went outside');
+            })
+
+           
+        // let btn = document.getElementById('btn');
+        // btn.addEventListener('mousout', function run(){
+        //     alert('outside');
+        // })
+
+
+       function toggleHide(){
+        // let btn = document.getElementById('btn');
+        // let para = document.getElementById('para'); 
+        if(para.style.display != 'none'){
+        para.style.display = 'none';
+        }
+        else{
+        para.style.display = 'block';
+        }
+    }
+
+   </script>
+</body>
+</html>

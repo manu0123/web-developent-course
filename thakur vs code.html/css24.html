@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating trasition in css</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #box {
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+            /* transition-property: background-color; */
+            /* transition-duration: 2s; */
+            /* transition-timing-function: ease-out; */
+            /* transition-delay: 3s; */
+            transition:  background-color 4s ease-out 4s;
+
+        }
+
+        #box:hover {
+            background-color: rgb(27, 221, 124);
+            cursor: pointer;
+            width: 344px;
+            height: 544px;
+            border-radius: 23px;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is css transition tutorial</h1>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+
+</html>

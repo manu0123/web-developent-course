@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 3px solid red;
+            background: lightblue;
+            padding: 34px;
+            margin: 34px;
+            width: 455px;
+            margin: auto;
+        }
+        .click{
+            background: rgb(14, 145, 231);
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            font-size:13px;
+            border-radius: 5px;
+            /* text-decoration: underline; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: bold;
+            
+            
+        }
+        a{
+            /* text-decoration: underline; */
+            text-decoration: none;
+        
+        }
+        a:hover{
+            color: red;
+            background: lightseagreen;
+        }
+     .click:hover{
+         color: rgb(231, 15, 231);
+         background: green;
+     }
+     .click:active{
+         color: salmon;
+         background: white;
+     }
+       a:visited{
+           color: yellow;
+           
+
+        }
+        a:active{
+            color: tomato;
+            background: rgb(231, 15, 231);
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is a heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, vitae hic provident, facere quis in numquam quasi cumque obcaecati tempora nulla velit! Praesentium perferendis culpa soluta distinctio laudantium ullam aspernatur deleniti voluptatem odit nesciunt?</p>
+   <a href="https://google.com" class="click">Readmore</a>
+   <button class="click">contact us</button>
+    </div>
+</body>
+</html>

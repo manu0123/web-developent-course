@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // constant is liye use krte hai ki accidently hme lgta hai ki hum variable ko change kr skte hai 
+        // let is liye use krte ane vale tym me hme variable change krne ki jrurat pd skti hai
+        // var string1 = "this is a string";
+        // var string1 = "this is a string2";
+        // console.log(string1);
+
+        // let age = 4;
+        // if(age>18){
+        //     console.log("You can drink vine");
+        // }
+        // else if(age==4){
+        //     console.log("age is 4");
+
+        // }
+        // else{
+        //     console.log("you can drink only water");
+        // }
+
+
+        let cups = 43;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+            case 34:
+                console.log("The value of cups is 34")
+                
+                break;
+            case 23:
+                console.log("The value of cups is 23")
+                
+                break;
+            case 65:
+                console.log("The value of cups is 65")
+                
+                break;
+        
+            default:
+                console.log("The value of cups is none of 4,34,23,65");
+                break;
+        }
+    </script>
+</body>
+</html>

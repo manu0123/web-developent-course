@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 7px 23px;
+            margin: 22px 4px;
+            /* border: 2px solid red; */
+            background: url(https://upload.wikimedia.org/wikipedia/commons/5/58/AcetoFive.JPG)no-repeat center center/cover;
+            */
+            /* background-color: rgb(121, 121, 194); */
+            /* box-shadow: 5px 5px yellow; */
+            /* box-shadow: 7px 18px 27px 31px yellow; */
+            /* box-shadow: -3px -3px 3px 3px red */
+            box-shadow: inset 3px 3px rgb(0, 255, 34), 3px 3px red;
+        }
+
+        .card h2 {
+            /* text-shadow: 3px 2px rgb(187 201 187); */
+            /* text-shadow: 3px 3px 3px white; */
+            text-shadow: -3px -3px 3px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is css course</h2>
+            <p> I have start css course in laptop.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo
+                eaque cum tempora corrupti eveniet quibusdam consequatur pariatur impedit ipsa delectus accusantium
+                sequi deserunt, aut porro voluptatum quos, incidunt perferendis eligendi nihil exercitationem! Quam.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is html course</h2>
+
+            <p> I have start html course in laptop.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo
+                eaque cum tempora corrupti eveniet quibusdam consequatur pariatur impedit ipsa delectus accusantium
+                sequi deserunt, aut porro voluptatum quos, incidunt perferendis eligendi nihil exercitationem! Quam.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is php course</h2>
+
+            <p> I have start php course in laptop.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo
+                eaque cum tempora corrupti eveniet quibusdam consequatur pariatur impedit ipsa delectus accusantium
+                sequi deserunt, aut porro voluptatum quos, incidunt perferendis eligendi nihil exercitationem! Quam.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
